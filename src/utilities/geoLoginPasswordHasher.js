@@ -24,7 +24,7 @@ exports.CreateHash = function(options) {
 exports.ValidatePassword = function(options) {
     var d = Q.defer();
 
-    var goodHash = options.goodHash.toLowerCase();
+    var goodHash = options.goodHash;
     var split = goodHash.split('.');
     var salt = split[0] + '.' + split[1];
     console.log('salt: ' + salt);

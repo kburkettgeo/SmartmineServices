@@ -25,7 +25,7 @@ var crypto = require('crypto');
 
 hasher.ValidatePassword({
         password: 'pwd',
-        goodHash: '3E8.08uF59l8ITSYef8OlfEk0gLi+bnICeWn4sHEDjUre98=.MOlrVwhPPB1TJpYdPOzVgtdth02iLk2kWGBUpZ4p0DY='})
+        goodHash: '3e8.08uF59l8ITSYef8OlfEk0gLi+bnICeWn4sHEDjUre98=.MOlrVwhPPB1TJpYdPOzVgtdth02iLk2kWGBUpZ4p0DY='})
     .then(function(result) {
         console.log(result);
     }, function(err){
