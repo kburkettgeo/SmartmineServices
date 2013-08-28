@@ -1,0 +1,22 @@
+{ "name" : "smartmine-services-node-server"
+    , "version" : "1.0.0"
+    , "dependencies" :
+{
+    "geojson" : "*" ,
+    "MD5" : "*",
+    "pg" : "*",
+    "restify" : "*",
+    "xml2js" : "*",
+    "q" : "*",
+    "underscore" : "*",
+    "jasmine-node" : "*",
+    "backbone" : "*",
+    "inflection" : "*",
+    "when" : "*",
+    "trigger-then" : "*",
+    "knex" : "*",
+    "bookshelf" : "*",
+    "easy-pbkdf2" : "*",
+    "amazon-ses" : "*"
+}
+}
