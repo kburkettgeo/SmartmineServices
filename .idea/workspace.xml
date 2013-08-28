@@ -7,7 +7,7 @@
     <file path="/app.js" changelist="f54d0c1c-cad7-4864-9930-780efd5bc981" time="1377554374754" ignored="false" />
     <file path="/packages.json" changelist="f54d0c1c-cad7-4864-9930-780efd5bc981" time="1377554578352" ignored="false" />
     <file path="/geoLoginController.js" changelist="f54d0c1c-cad7-4864-9930-780efd5bc981" time="1377648805887" ignored="false" />
-    <file path="/geoLoginQueryManager.js" changelist="f54d0c1c-cad7-4864-9930-780efd5bc981" time="1377648536319" ignored="false" />
+    <file path="/geoLoginQueryManager.js" changelist="f54d0c1c-cad7-4864-9930-780efd5bc981" time="1377718449124" ignored="false" />
     <file path="/geoLoginQueryManagerTest.js" changelist="f54d0c1c-cad7-4864-9930-780efd5bc981" time="1377556917680" ignored="false" />
     <file path="/jsTestDriver.conf" changelist="f54d0c1c-cad7-4864-9930-780efd5bc981" time="1377558834578" ignored="false" />
     <file path="/geoLoginQueryManager.spec.js" changelist="f54d0c1c-cad7-4864-9930-780efd5bc981" time="1377619933856" ignored="false" />
@@ -15,10 +15,10 @@
     <file path="/a.js" changelist="f54d0c1c-cad7-4864-9930-780efd5bc981" time="1377563695972" ignored="false" />
     <file path="/geoLoginModel.js" changelist="f54d0c1c-cad7-4864-9930-780efd5bc981" time="1377565575179" ignored="false" />
     <file path="/geoLoginFactory.js" changelist="f54d0c1c-cad7-4864-9930-780efd5bc981" time="1377566968306" ignored="false" />
-    <file path="/geoLoginPasswordHasher.js" changelist="f54d0c1c-cad7-4864-9930-780efd5bc981" time="1377649232860" ignored="false" />
+    <file path="/geoLoginPasswordHasher.js" changelist="f54d0c1c-cad7-4864-9930-780efd5bc981" time="1377727256248" ignored="false" />
     <file path="/package.json" changelist="f54d0c1c-cad7-4864-9930-780efd5bc981" time="1377571378962" ignored="false" />
-    <file path="/geoLoginPasswordHasher.spec.js" changelist="f54d0c1c-cad7-4864-9930-780efd5bc981" time="1377704250388" ignored="false" />
-    <file path="/easy-pbkdf2.js" changelist="f54d0c1c-cad7-4864-9930-780efd5bc981" time="1377573054815" ignored="false" />
+    <file path="/geoLoginPasswordHasher.spec.js" changelist="f54d0c1c-cad7-4864-9930-780efd5bc981" time="1377719864639" ignored="false" />
+    <file path="/easy-pbkdf2.js" changelist="f54d0c1c-cad7-4864-9930-780efd5bc981" time="1377709555886" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,16 +44,7 @@
       <file leaf-file-name="geoLoginController.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/controller/geoLoginController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="32" selection-start="180" selection-end="180" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="geoLoginFactory.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/factory/geoLoginFactory.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="38" selection-start="676" selection-end="676" vertical-scroll-proportion="0.0">
+            <state line="4" column="30" selection-start="178" selection-end="178" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -62,7 +53,7 @@
       <file leaf-file-name="geoLoginQueryManager.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/queryManager/geoLoginQueryManager.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="0" selection-start="1038" selection-end="1038" vertical-scroll-proportion="0.0">
+            <state line="21" column="68" selection-start="922" selection-end="922" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -71,7 +62,7 @@
       <file leaf-file-name="geoLoginPasswordHasher.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/utilities/geoLoginPasswordHasher.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="16" selection-start="289" selection-end="289" vertical-scroll-proportion="0.0">
+            <state line="18" column="22" selection-start="563" selection-end="563" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -86,10 +77,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="easy-pbkdf2.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="easy-pbkdf2.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/node_modules/easy-pbkdf2/easy-pbkdf2.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="185" column="1" selection-start="5279" selection-end="5377" vertical-scroll-proportion="0.0">
+            <state line="160" column="70" selection-start="4720" selection-end="4720" vertical-scroll-proportion="0.14224137">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="crypto.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/.WebStorm6/system/extLibs/nodejs-v0.10.15-src/core-modules-sources/lib/crypto.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="58" column="73" selection-start="2157" selection-end="2157" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -113,10 +113,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="geoLoginPasswordHasher.spec.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="geoLoginPasswordHasher.spec.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src-test/utilities/geoLoginPasswordHasher.spec.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="18" selection-start="1614" selection-end="1614" vertical-scroll-proportion="0.12068965">
+            <state line="25" column="14" selection-start="675" selection-end="675" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -125,7 +125,7 @@
       <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/node_modules/restify/node_modules/backoff/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="15" selection-start="1368" selection-end="1368" vertical-scroll-proportion="0.0">
+            <state line="35" column="89" selection-start="1090" selection-end="1090" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -152,11 +152,11 @@
         <option value="$PROJECT_DIR$/src/factory/geoLoginFactory.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src-test/queryManager/geoLoginQueryManager.spec.js" />
-        <option value="$PROJECT_DIR$/src/queryManager/geoLoginQueryManager.js" />
         <option value="$PROJECT_DIR$/src/controller/geoLoginController.js" />
-        <option value="$PROJECT_DIR$/node_modules/easy-pbkdf2/easy-pbkdf2.js" />
-        <option value="$PROJECT_DIR$/src/utilities/geoLoginPasswordHasher.js" />
+        <option value="$PROJECT_DIR$/src/queryManager/geoLoginQueryManager.js" />
         <option value="$PROJECT_DIR$/src-test/utilities/geoLoginPasswordHasher.spec.js" />
+        <option value="$PROJECT_DIR$/src/utilities/geoLoginPasswordHasher.js" />
+        <option value="$PROJECT_DIR$/node_modules/easy-pbkdf2/easy-pbkdf2.js" />
       </list>
     </option>
   </component>
@@ -364,6 +364,38 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SmartmineServices" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SmartmineServices" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node_modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SmartmineServices" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SmartmineServices" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node_modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="easy-pbkdf2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -501,9 +533,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1456" height="916" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="FLOATING" visible="true" weight="0.32938075" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="43" y="226" width="1014" height="457" />
+      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="FLOATING" visible="true" weight="0.32938075" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="71" y="166" width="1014" height="457" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -511,7 +543,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39789197" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32674572" sideWeight="0.49964714" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32674572" sideWeight="0.49964714" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="JsTestDriver Server" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32760897" sideWeight="0.50035286" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -590,17 +622,12 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/queryManager/geoLoginQueryManager.js</url>
-          <line>21</line>
-          <option name="timeStamp" value="45" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/queryManager/geoLoginQueryManager.js</url>
-          <line>23</line>
-          <option name="timeStamp" value="46" />
+          <url>file://$PROJECT_DIR$/node_modules/easy-pbkdf2/easy-pbkdf2.js</url>
+          <line>170</line>
+          <option name="timeStamp" value="52" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="48" />
+      <option name="time" value="53" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -632,13 +659,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/restify/node_modules/backoff/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="15" selection-start="1368" selection-end="1368" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src-test/queryManager/geoLoginQueryManager.spec.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="35" selection-start="255" selection-end="255" vertical-scroll-proportion="0.36637932">
@@ -649,13 +669,6 @@
     <entry file="file://$PROJECT_DIR$/node_modules/easy-pbkdf2/test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="76" selection-start="131" selection-end="131" vertical-scroll-proportion="0.124390244">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.WebStorm6/system/extLibs/nodejs-v0.10.15-src/core-modules-sources/lib/crypto.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="548" column="9" selection-start="14915" selection-end="14915" vertical-scroll-proportion="1.4512196">
           <folding />
         </state>
       </provider>
@@ -674,20 +687,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/geoLoginController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="32" selection-start="180" selection-end="180" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/queryManager/geoLoginQueryManager.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="1038" selection-end="1038" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="58" selection-start="181" selection-end="181" vertical-scroll-proportion="0.0">
@@ -695,23 +694,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/utilities/geoLoginPasswordHasher.js">
+    <entry file="file://$PROJECT_DIR$/src/controller/geoLoginController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="16" selection-start="289" selection-end="289" vertical-scroll-proportion="0.0">
+        <state line="4" column="30" selection-start="178" selection-end="178" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/easy-pbkdf2/easy-pbkdf2.js">
+    <entry file="file://$PROJECT_DIR$/src/queryManager/geoLoginQueryManager.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="185" column="1" selection-start="5279" selection-end="5377" vertical-scroll-proportion="0.0">
+        <state line="21" column="68" selection-start="922" selection-end="922" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src-test/utilities/geoLoginPasswordHasher.spec.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="18" selection-start="1614" selection-end="1614" vertical-scroll-proportion="0.12068965">
+        <state line="25" column="14" selection-start="675" selection-end="675" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utilities/geoLoginPasswordHasher.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="22" selection-start="563" selection-end="563" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.WebStorm6/system/extLibs/nodejs-v0.10.15-src/core-modules-sources/lib/crypto.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="73" selection-start="2157" selection-end="2157" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/restify/node_modules/backoff/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="89" selection-start="1090" selection-end="1090" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/easy-pbkdf2/easy-pbkdf2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="160" column="70" selection-start="4720" selection-end="4720" vertical-scroll-proportion="0.14224137">
           <folding />
         </state>
       </provider>

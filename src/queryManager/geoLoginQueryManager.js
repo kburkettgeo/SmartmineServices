@@ -8,26 +8,28 @@ exports.loginUser = function(options){
 
     var userLogins = new geoLoginModel.UserLogins();
 
-    Q.allSettled(userLogins.query('where', 'login', '=', options.userName).fetch())
-        .then(function(userLogins){
-            if (userLogins.models.length === 1) {
-                var userLogin = userLogins.models[0];
-                var retval = geoLoginFactory.buildNewLoginStatusModel(userLogin.get('login'))
-                console.log('found user: ' + userLogin.get('login'));
-                geoLoginPasswordHasher.ValidatePassword({
-                    password: options.password,
-                    goodHash: userLogin.get('hashed_password')
-                })
+    var blah = function(userLogins){
+        if (userLogins.models.length === 1) {
+            var userLogin = userLogins.models[0];
+            var retval = geoLoginFactory.buildNewLoginStatusModel(userLogin.get('login'))
+            console.log('found user: ' + userLogin.get('login'));
+            geoLoginPasswordHasher.ValidatePassword({
+                password: options.password,
+                goodHash: userLogin.get('hashed_password')
+            })
                 .then(function(result) {
                     d.resolve(result);
                 }, function(err){
                     d.reject(err);
                 });
-            } else {
-                console.log('no dice');
-            }
+        } else {
+            console.log('no dice');
+        }
 
-        });
+    };
+
+    Q.allSettled(userLogins.query('where', 'login', '=', options.userName).fetch())
+        .then();
 
 //    new geoLoginModel.UserLogins({'login': userName})
 //        .fetch({require: true,
@@ -51,3 +53,4 @@ exports.loginUser = function(options){
 
     return d.promise;
 };
+
