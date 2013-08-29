@@ -1,49 +1,52 @@
 var Q = require('q');
-var easyPbkdf2  = require('easy-pbkdf2')();
-easyPbkdf2.DEFAULT_HASH_ITERATIONS = 1000;
-easyPbkdf2.SALT_SIZE = 32;
+var crypto = require('crypto');
 
 var PBKDF2 = function(password, salt) {
     var d = Q.defer();
-    easyPbkdf2.secureHash(password, salt, function(err, result, salt){
-            d.resolve(result);
-        });
-    return d.promise;
+
+	console.log(password);
+	console.log(salt);
+	
+	crypto.pbkdf2( password, salt, 1000, 32, function( err, derivedKey ) {
+		console.log(derivedKey.length);
+		var base64;
+		if ( !err ){
+			base64 = new Buffer( derivedKey, "binary" ).toString("base64");
+		}	   
+		d.resolve(base64);
+	});
+
+		return d.promise;
 };
 
-exports.CreateHash = function(options) {
-    var d = Q.defer();
-    salt = options.salt ? options.salt : easyPbkdf2.generateSalt();
-    PBKDF2(options.password, salt)
-        .then( function(result) {
-            d.resolve(salt + '.' + result);
-        });
-    return d.promise;
+var decryptAes = function(encodedString){
+
 };
+
 
 exports.ValidatePassword = function(options) {
     var d = Q.defer();
 
     var goodHash = options.goodHash;
     var split = goodHash.split('.');
-    var salt = split[0] + '.' + split[1];
-    console.log('salt: ' + salt);
+    var encryptedIv = split[0];
+    var bufIv = new Buffer(encryptedIv, 'base64');
+    var binIv = bufIv.toString('binary')
+    var encryptedKey = split[1];
+    var bufKey = new Buffer(encryptedKey, 'base64');
+    var binKey = bufKey.toString('binary')
+    var encryptedPassword = split[0];
+    var bufEncryptedPassword = new Buffer(encryptedPassword, 'base64');
+    var binEncryptedPassword = bufEncryptedPassword.toString('binary')
+    console.log('encryptedIv: ' + encryptedIv);
+    console.log('encryptedKey: ' + encryptedKey);
+    console.log('encryptedPassword: ' + encryptedPassword);
 
-    exports.CreateHash({
-        password: options.password,
-        salt: salt
-        })
-        .then(function(testHash){
-            console.log('goodHash: ' + goodHash);
-            console.log('testHash: ' + testHash);
-            if (testHash === goodHash){
-                d.resolve('validated');
-            }
-            else{
-                d.reject('invalid password');
-            }
-        });
+    var decipher = crypto.createDecipher('aes-128-cbc', binKey, binIv);
+    decipher.update(encryptedPassword, 'base64', 'utf8');
+    var decryptedPassword = decipher.final('utf8');
 
+    console.log(decryptedPassword);
 
     return d.promise;
 };
